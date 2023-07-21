@@ -736,7 +736,7 @@ body {
 }
 .input {
   width: 100%;
-
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   height: 40px;
 
   border-radius: 4px;
@@ -746,7 +746,12 @@ body {
   outline: transparent;
   border-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.input:is(:focus, :hover) {
+  border-color: var(--button-color);
+}
+.imput-box {
+  margin-bottom: 24px;
+}
 .input:is(:focus, :hover) + .icon-modal {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-color: var(--button-color);
@@ -756,11 +761,11 @@ body {
   position: relative;
 }
 .icon-modal {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-div {
   margin-bottom: 16px;
@@ -833,7 +838,7 @@ body {
   fill: transparent;
 }
 
-.box:checked + .checkbox-span {
+.box:checked + .label-check .checkbox-span {
   border: none;
   fill: #f4f4fd;
   background-color: var(--hover-color);
@@ -842,6 +847,9 @@ body {
   color: var(--button-color);
 }
 .form-button {
+  min-width: 169px;
+  cursor: pointer;
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
   margin: 0 auto;
   margin-top: 24px;
@@ -866,6 +874,11 @@ body {
   background-color: #404bbf;
 }
 .footer-button {
+  min-width: 165px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
   margin-left: 24px;
   width: 165px;
   height: 40px;
@@ -886,6 +899,8 @@ body {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+.icon-f {
+}
 .label-f {
   color: #fff;
   margin-bottom: 16px;
@@ -900,5 +915,4 @@ body {
   gap: 24px;
 }
 .footer-label {
-  margin-left: 80px;
 }
