@@ -832,22 +832,20 @@ body {
   height: 16px;
   fill: transparent;
 }
-.icon-check {
-}
+
 .box:checked + .checkbox-span {
   fill: #ffffff;
   background-color: var(--hover-color);
 }
-.box:focus + .checkbox-span {
+.box[type="checkbox"]:focus + .checkbox-span {
   background-color: var(--hover-color);
 }
 .footer-label {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .email-form {
-  margin-left: 80px;
-  justify-content: center;
   align-items: center;
   background: #2e2f42;
   width: 264px;
@@ -884,7 +882,7 @@ body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .label-f {
-  margin-left: 80px;
+  justify-content: flex-end;
   color: #fff;
   margin-bottom: 16px;
   font-size: 16px;
