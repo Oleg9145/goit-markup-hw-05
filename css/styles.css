@@ -752,7 +752,7 @@ body {
   border-color: var(--button-color);
 }
 .imput-box {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 .input:is(:focus, :hover) + .icon-modal {
   border-color: var(--button-color);
