@@ -797,8 +797,8 @@ body {
 .input:is(:focus, :hover) {
   border-color: var(--button-color);
 }
-d.input-box {
-  margin-bottom: 24px;
+.input-box {
+  margin-bottom: 16px;
 }
 .input:is(:focus, :hover) + .icon-modal {
   border-color: var(--button-color);
@@ -817,7 +817,10 @@ d.input-box {
 .input:checked + .icon-modal {
 }
 .form-div {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+.div-comment {
+  margin-bottom: 26px;
 }
 .area:is(:focus, :hover) {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
